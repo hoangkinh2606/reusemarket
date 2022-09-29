@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reusemarket.css">
+    <link rel="stylesheet" href="base.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="jquery.js"></script>
+    <title>ReuseMarket</title>
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $('.next').click(function(){
+                const imgSelectVisible = $('img.slide_item:visible');
+                let imgVisible = parseInt(attr('number'));
+                let nextImage = imgVisible + 1;
+                alert(nextImage);
+
+                imgSelectVisible.hide();
+            })
+        })
+    </script>
+    <header>
+        <article class="header_container">
+            <div class="logo">
+                <a href="#"><img src="top_img/logo.png" alt="logo"></a>
+            </div>
+            <nav class="menu">
+                <ul class="menu_list">
+                    <li><a href="#">遺品整理</a></li>
+                    <li><a href="#">販売</a></li>
+                    <li><a href="#">買取</a></li>
+                    <li><a href="#">会社概要</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </article>
+        <article class="slide">
+            <img class="slide_item" src="top_img/slide1.png" alt="slide1" number="0">  
+            <img class="slide_item" src="top_img/slide2.png" alt="slide2" number="1" style="display:none;">  
+            <img class="slide_item" src="top_img/slide3.png" alt="slide3" number="2" style="display:none;">  
+            <img class="slide_item" src="top_img/slide4.PNG" alt="slide4" number="3" style="display:none;">  
+            <a href="#" class="next">Next</a>
+            <a href="#" class="prev">Prev</a>
+        </article>
+    </header>
+    <main>
+        <article class="container">
+            <section class="reusemarket_about">
+                <img src="top_img//big_logo.png" alt="big_logo">
+                <p>下記のような場面でお役立てください</p>
+            </section>
+            <section class="reusemarket_gacbage">
+                <article class="gacbage">
+                    <img src="top_img/sofa_icon.png" alt="sofa_icon">
+                    <p>不良品回収・<br> 粗大ゴミ処分</p>
+                </article>
+                <article class="gacbage">
+                    <img src="top_img/rejoko.png" alt="rejoko">
+                    <p>引っ越しに伴う<br>粗大ゴミ回収</p>
+                </article>
+                <article class="gacbage">
+                    <img src="top_img/gomi_icon.png" alt="gomi_icon">
+                    <p>ゴミ部屋の<br>片付け</p>
+                </article>
+                <article class="gacbage">
+                    <img src="top_img/iei_icon.png" alt="iei_icon">
+                    <p>遺品整理</p>
+                </article>
+            </section>
+            <section class="reusemarket_text">
+                <h2>リユースショップだからできる「リユース・リサイクル値引」</h2>
+                <p>遺品整理・不用品回収残置物撤去の際に当店でリユース販売可能なものは買取いたします。
+                    また、リユースが難しいと判断したものでも資源としてリサイクルできるものは処分費用が
+                    かからないため割合に応じて値引いたします。</p>
+                <img src="top_img/kaishu.PNG" alt="kaishu">
+            </section>
+            <section class="reusemarket_sabisu">
+                <article class="sabisu_one">
+                    <p>通常の回収費用</p>
+                    <img src="top_img/hijou1.PNG" alt="hijou1">
+                </article>
+                <article class="sabisu_three">
+                    <img src="top_img/tsugi_icon.png" alt="tsugi_icon">
+                </article>
+                <article class="sabisu_two">
+                    <p>当店買取サービス利用の回収費用</p>
+                    <img src="top_img/fujou1.PNG" alt="fujou1">
+                </article>
+                <article class="sabisu_four">
+                    <img src="top_img/hijou2.PNG" alt="hijou2>
+                </article>
+                <article class="sabisu_five">
+                    <img src="top_img/tsugi_icon.png" alt="tsugi_icon">
+                </article>
+                <article class="sabisu_six">
+                    <img src="top_img/fujou2.PNG" alt="fujou2">
+                </article>
+            </section>
+            <section class="one"></section>
+            <section class="one"></section>
+            <section class="one"></section>
+            <section class="one"></section>
+            <section class="one"></section>
+            <section class="one"></section>
+            <section class="one"></section>
+            <section class="one"></section>
+            <section class="one"></section>
+            <section class="one"></section>
+        </article>
+    </main>
+    <footer></footer>
+</body>
+</html>
