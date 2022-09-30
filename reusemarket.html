@@ -4,25 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reusemarket.css">
-    <link rel="stylesheet" href="base.css">
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/reusemarket.css">
+    <link rel="stylesheet" href="css/reusemarket_mobile.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
     <script src="jquery.js"></script>
     <title>ReuseMarket</title>
 </head>
 <body>
-    <script>
-        $(document).ready(function(){
-            $('.next').click(function(){
-                const imgSelectVisible = $('img.slide_item:visible');
-                let imgVisible = parseInt(attr('number'));
-                let nextImage = imgVisible + 1;
-                alert(nextImage);
-
-                imgSelectVisible.hide();
-            })
-        })
-    </script>
+   
     <header>
         <article class="header_container">
             <div class="logo">
@@ -30,22 +21,34 @@
             </div>
             <nav class="menu">
                 <ul class="menu_list">
-                    <li><a href="#">遺品整理</a></li>
-                    <li><a href="#">販売</a></li>
-                    <li><a href="#">買取</a></li>
-                    <li><a href="#">会社概要</a></li>
-                    <li><a href="#">お問い合わせ</a></li>
+                    <li><a href="seiri.html">遺品整理</a></li>
+                    <li><a href="hanbai.html">販売</a></li>
+                    <li><a href="kaitori.html">買取</a></li>
+                    <li><a href="gaiyou.html">会社概要</a></li>
+                    <li><a href="otoiawasei.html">お問い合わせ</a></li>
                 </ul>
             </nav>
         </article>
-        <article class="slide">
-            <img class="slide_item" src="top_img/slide1.png" alt="slide1" number="0">  
-            <img class="slide_item" src="top_img/slide2.png" alt="slide2" number="1" style="display:none;">  
-            <img class="slide_item" src="top_img/slide3.png" alt="slide3" number="2" style="display:none;">  
-            <img class="slide_item" src="top_img/slide4.PNG" alt="slide4" number="3" style="display:none;">  
-            <a href="#" class="next">Next</a>
-            <a href="#" class="prev">Prev</a>
-        </article>
+        <ul class="slider">
+            <li><img src="top_img/slide1.PNG" alt="slide1"></li>
+            <li><img src="top_img/slide2.PNG" alt="slide2"></li>
+            <li><img src="top_img/slide3.PNG" alt="slide3"></li>
+            <li><img src="top_img/slide4.PNG" alt="slide4"></li>
+            <li><img src="top_img/slide5.PNG" alt="slide5"></li>
+        </ul>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script>
+           $(document).ready(function(){
+                $('.slider').slick({
+                    accessibility: true,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    speed: 400,
+                });
+           })     
+        </script>
+        
     </header>
     <main>
         <article class="container">
@@ -71,7 +74,7 @@
                     <p>遺品整理</p>
                 </article>
             </section>
-            <section class="reusemarket_text">
+            <section class="reusemarket_discount">
                 <h2>リユースショップだからできる「リユース・リサイクル値引」</h2>
                 <p>遺品整理・不用品回収残置物撤去の際に当店でリユース販売可能なものは買取いたします。
                     また、リユースが難しいと判断したものでも資源としてリサイクルできるものは処分費用が
@@ -83,35 +86,261 @@
                     <p>通常の回収費用</p>
                     <img src="top_img/hijou1.PNG" alt="hijou1">
                 </article>
-                <article class="sabisu_three">
+                <article class="sabisu_two">
                     <img src="top_img/tsugi_icon.png" alt="tsugi_icon">
                 </article>
-                <article class="sabisu_two">
+                <article class="sabisu_three">
                     <p>当店買取サービス利用の回収費用</p>
                     <img src="top_img/fujou1.PNG" alt="fujou1">
                 </article>
+
                 <article class="sabisu_four">
-                    <img src="top_img/hijou2.PNG" alt="hijou2>
+                    <img src="top_img/hijou1.PNG" alt="hijou1">
                 </article>
                 <article class="sabisu_five">
                     <img src="top_img/tsugi_icon.png" alt="tsugi_icon">
                 </article>
                 <article class="sabisu_six">
-                    <img src="top_img/fujou2.PNG" alt="fujou2">
+                    <img src="top_img/fujou2.PNG" alt="fujou1">
+                </article>
+               
+            </section>
+            <section class="reusemarket_recycling">
+                <article class="recycling_container">
+                    <div class="naohiki">
+                        <img src="top_img/gomi.png" alt="gomi">
+                        <img src="top_img/tsugi_blue_icon.png" alt="tsugi_icon">
+                        <img src="top_img/gominai.png" alt="gominai">
+                    </div>
+                    <h4>リユース・リサイクル値引き</h4>
                 </article>
             </section>
-            <section class="one"></section>
-            <section class="one"></section>
-            <section class="one"></section>
-            <section class="one"></section>
-            <section class="one"></section>
-            <section class="one"></section>
-            <section class="one"></section>
-            <section class="one"></section>
-            <section class="one"></section>
-            <section class="one"></section>
+            <section class="reusemarket_activity">
+                <h3>また、当店運営会社である</h3>
+                <div class="activity_city">
+                    <img src="top_img/maintics.png" alt="maintics">
+                    <img src="top_img/x_icon.png" alt="x_icon">
+                    <img src="top_img/nextstage.png " alt="nextstage">
+                </div>
+                <h3>だから出来る</h3>
+                <h4>1つの窓口ですべて解決</h4>
+            </section>
+            <section class="reusemarket_one_stop">
+                <h3>ワンストップサービス</h3>
+                <article class="one_stop">
+                    <div class="one_stop_kyaku">
+                        <p>お<br>客<br>様</p>
+                    </div>
+                    <div class="one_stop_osha">
+                        <img src="top_img/next_prev.png" alt="next_prev">
+                    </div>
+                    <div class="one_title">
+                        <p class="one_title_osha">弊<br>社</p>
+                        <div class="one_title_element">
+                            <p>・不用品・残置物回収処分・生前整理・空家・解体物件整理<br>
+                                ・遺品整理・買取・リサイクル・福祉家財整理</p>
+                            <p>遺品整理・不用品回収・残置物回収後の
+                                ハウスクリーニング/空き部屋管理・不動産管理/解体工事など</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="reusemarket_step">
+                <h3>ご契約までの流れ</h3>
+                <img src="top_img/step.PNG" alt="step">
+            </section>
+            <section class="reusemarket_information">
+                <h3>サービスのご案内</h3>
+                <article class="information">
+                    <div class="information_one">
+                        <p>遺品整理</p>
+                    </div>
+                    <div class="information_two">
+                        <p>残置物の撤去</p>
+                    </div>
+                    <div class="information_three">
+                        <p>販売</p>
+                    </div>
+                    <div class="information_four">
+                        <p>買取</p>
+                    </div>
+                </article>
+            </section>
+            <section class="reusemarket_store">
+                <article class="store">
+                    <h3>店舗情報</h3>
+                    <article class="store_container">
+                        <img src="top_img/homekirei.png" alt="homekirei">
+                        <div class="store_title">
+                            <ul class="store_title_list">    
+                                <h4>リユースマーケット</h4>
+                                <li>〒367-0211</li>
+                                <li>埼玉県本庄市児玉町吉田林392</li>
+                                <li>TEL:0495-71-7581</li>
+                                <li>営業時間: 10:00~20:00</li>
+                                <li>定休日: 毎週水曜日</li>
+                                <li>中古品の販売買取ならリユースマーケットにおまかせ！</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <h3>アクセス・会社概要</h3>
+                </article>
+            </section>
+            <section class="reusemarket_text">
+                <h3>お知らせ</h3>
+                <article class="text">
+                    <ul class="text_list">
+                        <li>
+                            <a href="#"> 
+                                2022.2.25　<span class="new_red">NEW</span> テキストテキストテキスト
+                                テキストテキストテキスト
+                                <img class="line1" src="top_img/line1.png" alt="">
+                                <img class="line2" src="top_img/line2.png" alt="">
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <a href="#">
+                                2022.2.25　テキストテキストテキスト
+                                テキストテキストテキスト
+                                <img class="line1" src="top_img/line1.png" alt="">
+                                <img class="line2" src="top_img/line2.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">2022.2.25　テキストテキストテキスト
+                            テキストテキストテキスト
+                            <img class="line1" src="top_img/line1.png" alt="">
+                            <img class="line2" src="top_img/line2.png" alt="">
+                        </a>
+                        </li>
+                        <li>
+                            <a href="#">2022.2.25　テキストテキストテキスト
+                            テキストテキストテキスト
+                            <img class="line1" src="top_img/line1.png" alt="">
+                            <img class="line2" src="top_img/line2.png" alt="">
+                        </a>
+                        </li>
+                        <li>
+                            <a href="#">2022.2.25　テキストテキストテキスト
+                            テキストテキストテキスト
+                            <img class="line1" src="top_img/line1.png" alt="">
+                            <img class="line2" src="top_img/line2.png" alt="">
+                        </a>
+                        </li>
+                    </ul>
+                </article>
+                <h3>もっと見る</h3>
+            </section>
+            <section class="reusemarket_inquiry">
+                <article class="inquiry">
+                    <h3>お問い合わせはお気軽に</h3>
+                    <h4 class="inquiry_first">受付時間 ; 10:00 ~ 19:00  定休日: </h4>
+                    <div class="inquiry_contact">
+                        <div class="inquiry_contact_phone">
+                            <h5>電話でのお問い合わせ</h5>
+                            <div class="phone_number">
+                                <img src="top_img/contact_icon.png" alt="contact_icon">
+                                <p>0495-71-7581</p>
+                            </div>
+                        </div>
+                        <div class="inquiry_contact_mail">メールでのお問いあわせ</div>
+                        <div class="inquiry_contact_line">
+                            <img src="top_img/contact_line.png" alt="LINE_logo">
+                            <p>LINEからご相談</p>
+                        </div>
+                    </div>
+                    <h4 class="inquiry_last">買取のご相談、お問い合わせはお気軽に</h4>
+                </article>
+            </section>
+            <section class="reusemarket_questions">
+                <h4>よくある質問</h4>
+                <article class="questions">
+                    <ul class="questions_list">
+                        <li>
+                            <a href="#">
+                                連絡した当日でもきて貰えますか？<br>
+                                <span class="questions_list_title">可能な限り対応致します。
+                                2.3ご希望の時間帯を教えて頂けるとご予約が取りやすいです。</span>
+                                <img class="questions_line1" src="top_img/line1.png" alt="">
+                                <img class="questions_line2" src="top_img/line2.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                対応エリアを教えてください。
+                                <img class="questions_line1" src="top_img/line1.png" alt="">
+                                <img class="questions_line2" src="top_img/line2.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                買取のご相談、お問い合わせはお気軽に
+                                <img class="questions_line1" src="top_img/line1.png" alt="">
+                                <img class="questions_line2" src="top_img/line2.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                回収できない物ってどんな物がありますか？
+                                <img class="questions_line1" src="top_img/line1.png" alt="">
+                                <img class="questions_line2" src="top_img/line2.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                電話・メールで聞いた料金から増減する場合はありますか？
+                                <img class="questions_line1" src="top_img/line1.png" alt="">
+                                <img class="questions_line2" src="top_img/line2.png">
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+                <div class="inquiry_contact contact_two">
+                    <div class="inquiry_contact_phone contact_background">
+                        <h5>電話でのお問い合わせ</h5>
+                        <div class="phone_number">
+                            <img src="top_img/contact_icon.png" alt="contact_icon">
+                            <p>0495-71-7581</p>
+                        </div>
+                    </div>
+                    <div class="inquiry_contact_mail contact_background">メールでのお問いあわせ</div>
+                    <div class="inquiry_contact_line contact_background">
+                        <img src="top_img/contact_line.png" alt="LINE_logo">
+                        <p>LINEからご相談</p>
+                    </div>
+                </div>
+            </section>
         </article>
     </main>
-    <footer></footer>
+    <footer>
+        <article class="footer_container">
+            <section class="footer_logo">
+                <img src="top_img/footer_logo.png" alt="footer_logo">
+            </section>
+            <section class="footer_sns">
+                <h4>SNS</h4>
+                <div class="footer_icon">
+                    <img src="top_img/intergram-icon.png" alt="intergram-icon">
+                    <img src="top_img/Twitter-icon.png" alt="Twitter-icon">
+                    <img src="top_img/LINE_logo.png" alt="">
+                </div>
+                <p>本社〒367-0046 埼玉県本庄市栄3丁目2-10 <br>
+                    TEL:0495-23-4334  FAX: 0495-23-4336</p>
+            </section>
+            <section class="footer_menu">
+                <h4>メニュー</h4>
+                <ul class="footer_menu_list">
+                    <li><a href="#">遺品整理</a></li>
+                    <li><a href="#">買取</a></li>
+                    <li><a href="#">販売</a></li>
+                    <li><a href="#">アクセス</a></li>
+                    <li><a href="#">よくある質問</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+
+                </ul>
+            </section>
+        </article>
+    </footer>
 </body>
 </html>
