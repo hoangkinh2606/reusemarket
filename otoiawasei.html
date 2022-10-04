@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reusemarket.css">
+    <link rel="stylesheet" href="css/reusemarket_mobile.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/otoiawasei.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <script src="jquery.js"></script>
+    <title>ReuseMarket_otoiawasei</title>
+</head>
+<body>
+   
+    <header>
+        <article class="header_container">
+            <div class="logo">
+                <a href="#"><img src="top_img/logo.png" alt="logo"></a>
+            </div>
+            <nav class="menu">
+                <ul class="menu_list">
+                    <li><a href="seiri.html">遺品整理</a></li>
+                    <li><a href="hanbai.html">販売</a></li>
+                    <li><a href="kaitori.html">買取</a></li>
+                    <li><a href="gaiyou.html">会社概要</a></li>
+                    <li><a href="otoiawasei.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </article>
+        <ul class="slider">
+            <li><img src="top_img/slide1.PNG" alt="slide1"></li>
+            <li><img src="top_img/slide2.PNG" alt="slide2"></li>
+            <li><img src="top_img/slide3.PNG" alt="slide3"></li>
+            <li><img src="top_img/slide4.PNG" alt="slide4"></li>
+            <li><img src="top_img/slide5.PNG" alt="slide5"></li>
+        </ul>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script>
+           $(document).ready(function(){
+                $('.slider').slick({
+                    accessibility: true,
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    speed: 400,
+                });
+           })     
+        </script>
+        
+    </header>
+    <main>
+        <article class="otoiawasei_container">
+            <section class="customer_information">
+                <section class="customer_information_list">
+                    <div class="content_form">
+                        <label class="form_label star_red">お名前</label>
+                        <input type="text" placeholder="例）山田 太郎" class="form_input">  
+                    </div>
+                    <div class="content_form">
+                        <label class="form_label">フリガナ</label>  
+                        <input type="text" placeholder="例）やまだ たろう" class="form_input">
+                    </div>
+                    <div class="content_form">
+                        <label class="form_label star_red">メールアドレス</label>
+                    <input type="text" placeholder="ご入力ください" class="form_input">
+                    </div>
+                    <div class="content_form">
+                        <label class="form_label">電話番号</label>
+                        <input type="tel" placeholder="080-1234-5678" class="form_input">
+                    </div>
+                    <div class="content_form">
+                        <label class="form_label star_red">選択</label>
+                        <select placeholder="遺品整理" class="form_input sort_list_seiri">
+                            <option value="text">遺品整理2</option>
+                            <option value="text">遺品整理3</option>
+                            <option value="text">遺品整理4</option>
+                            <option value="text">遺品整理5</option>
+                        </select>
+                    </div>
+                    <div class="content_form">
+                        <label class="form_label">郵便番号</label>
+                        <input type="text" placeholder="123-4567" class="form_input">
+                    </div>
+                    <div class="content_form">
+                        <label class="form_label star_red">ご住所</label>
+                        <input type="text" class="form_input">
+                    </div>
+                    <div class="content_form content_form_last">
+                        <label class="form_label star_red">お問い合わせ内容</label>
+                        <textarea name="title" placeholder="ご入力ください" id="" cols="80" rows="20"></textarea>
+                    </div>
+                </section>
+            </section>
+            <section class="send">
+                <div class="send_input">
+                    <a href="#">送信する</a>
+                </div>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <article class="footer_container">
+            <section class="footer_logo">
+                <img src="top_img/footer_logo.png" alt="footer_logo">
+            </section>
+            <section class="footer_sns">
+                <h4>SNS</h4>
+                <div class="footer_icon">
+                    <img src="top_img/intergram-icon.png" alt="intergram-icon">
+                    <img src="top_img/Twitter-icon.png" alt="Twitter-icon">
+                    <img src="top_img/LINE_logo.png" alt="">
+                </div>
+                <p>本社〒367-0046 埼玉県本庄市栄3丁目2-10 <br>
+                    TEL:0495-23-4334  FAX: 0495-23-4336</p>
+            </section>
+            <section class="footer_menu">
+                <h4>メニュー</h4>
+                <ul class="footer_menu_list">
+                    <li><a href="#">遺品整理</a></li>
+                    <li><a href="#">買取</a></li>
+                    <li><a href="#">販売</a></li>
+                    <li><a href="#">アクセス</a></li>
+                    <li><a href="#">よくある質問</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+
+                </ul>
+            </section>
+        </article>
+    </footer>
+</body>
+</html>
